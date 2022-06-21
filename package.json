@@ -12,14 +12,12 @@
     "vue": "^3.2.37",
     "vue-axios": "^3.4.1",
     "vue-axios-cors": "^1.0.1",
-    "vue-router": "4",
+    "vue-router": "^4.0.16",
     "vuex": "^4.0.2",
     "vuex-persistedstate": "^4.1.0"
   },
   "devDependencies": {
     "@vitejs/plugin-vue": "^2.3.3",
-    "@vue/cli-plugin-router": "~5.0.0",
-    "@vue/cli-service": "^5.0.6",
     "@vue/compiler-sfc": "^3.2.37",
     "autoprefixer": "^10.4.7",
     "postcss": "^8.4.14",
