@@ -1,15 +1,10 @@
 <template>
-  <NavBar />
-  <HelloWorld msg="Hello Vue 3 + Vite" />
+  <nav>
+    <router-link to="/">Home</router-link> |
+    <router-link to="/about">About</router-link>
+  </nav>
+  <router-view/>
 </template>
-
-<script setup>
-import HelloWorld from "./components/HelloWorld.vue";
-import NavBar from "./components/NavBar.vue";
-
-// This starter template is using Vue 3 experimental <script setup> SFCs
-// Check out https://github.com/vuejs/rfcs/blob/script-setup-2/active-rfcs/0000-script-setup.md
-</script>
 
 <style>
 #app {
@@ -18,6 +13,18 @@ import NavBar from "./components/NavBar.vue";
   -moz-osx-font-smoothing: grayscale;
   text-align: center;
   color: #2c3e50;
-  margin-top: 60px;
+}
+
+nav {
+  padding: 30px;
+}
+
+nav a {
+  font-weight: bold;
+  color: #2c3e50;
+}
+
+nav a.router-link-exact-active {
+  color: #42b983;
 }
 </style>
